@@ -1,11 +1,21 @@
+
+#pip_options = --no-deps
+
 help:
 	@echo 'USAGE: make <target>'
 	@echo '-----------------'
 	@echo 'Available targets'
 	@echo '-----------------'
 	@echo '    clean..........................removes all .pyc files and all reports'
-	@echo '    splinter.......................runs all splinter cartola tests'
+	@echo '    splinter.......................runs all splinter  tests'
 
+
+
+setup:
+	@echo "Instalando as dependencias para o ambiente local..."
+	@echo "Installing Python Libraries ..."
+	@pip install $(pip_options) -r requirements.txt
+	@echo "\n======> DONE - All libs are Installed! <======\n"
 
 clean:
 	@echo "Cleaning up build, *.pyc and *.min.* files..."

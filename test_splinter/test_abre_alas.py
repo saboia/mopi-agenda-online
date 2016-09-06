@@ -22,4 +22,4 @@ class AbreTestCase(BaseAcceptanceSplinterTestCase):
         mensagem=EmailHelper.mensagem(destinatario='saboia@gmail.com,karinaafreire@gmail.com,freire.lucas07@gmail.com',corpo=corpo.first.html,subject="Agenda Online do dia %s" % datetime.now() )
         EmailHelper.enviar(mensagem=mensagem,destinatario='saboia@gmail.com')
         EmailHelper.enviar(mensagem=mensagem,destinatario='karinaafreire@gmail.com')
-        EmailHelper.enviar(mensagem=mensagem,destinatario='freire.lucas07@gmail.com')
+        #EmailHelper.enviar(mensagem=mensagem,destinatario='freire.lucas07@gmail.com')
